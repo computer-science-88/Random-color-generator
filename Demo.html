@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Demo.css">
+</head>
+<body>
+    <div class="container">
+        <span>#000000</span>
+        <button class="btnColor" onclick="generate_color()">
+            Generate random color
+        </button>
+    </div>
+
+    <script>
+        var span=document.querySelector("span");
+        var body=document.querySelector("body");
+
+        body.style.backgroundColor=span.innerText;
+        function generate_color(){
+            var randomColor="";
+            var characters="abcdef0123456789";
+
+            for(i=0;i<6;i++){
+                randomColor=randomColor+characters[Math.floor(Math.random()*16)];
+            }
+            span.innerText="#"+randomColor;
+            body.style.backgroundColor="#"+randomColor;
+        }
+
+    </script>
+</body>
+</html>

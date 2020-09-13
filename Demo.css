@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+span{
+    color: #fff;
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 0 5px 10px #000;
+}
+.btnColor{
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 23px;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 80px;
+    box-shadow: 0 4px 5px #000;
+}
